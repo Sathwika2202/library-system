@@ -1,0 +1,50 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Library Management System</h1>
+        <p>Manage your library books easily</p>
+
+        <div class="form">
+            <input type="text" id="bookId" placeholder="Book ID">
+            <input type="text" id="bookTitle" placeholder="Book Title">
+            <input type="text" id="bookAuthor" placeholder="Author Name">
+
+            <div class="buttons">
+                <button onclick="addBook()">Add Book</button>
+                <button onclick="viewBooks()">View Books</button>
+                <button onclick="searchBook()">Search Book</button>
+                <button onclick="updateBook()">Update Book</button>
+                <button onclick="deleteBook()">Delete Book</button>
+                <button onclick="clearFields()">Clear</button>
+            </div>
+        </div>
+
+        <p id="message"></p>
+
+        <h2>Book List</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Book Title</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody id="bookTable"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
