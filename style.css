@@ -1,0 +1,111 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #174ea6;
+}
+
+.container > p {
+    text-align: center;
+    color: #555;
+}
+
+.form {
+    margin-top: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 11px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #1769aa;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #0d4778;
+}
+
+h2 {
+    color: #174ea6;
+    margin-top: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #1769aa;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f6fa;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .buttons button {
+        flex: 1 1 40%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
